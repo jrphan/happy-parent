@@ -27,11 +27,12 @@ class FAQ {
   init() {
     this.faqItems.forEach((item) => {
       const question = item.querySelector(".faq-question");
-      question.addEventListener("click", () => this.toggleFAQ(item));
+      const toggle = item.querySelector(".faq-toggle");
+      question.addEventListener("click", () => this.toggleFAQ(item, toggle));
     });
   }
 
-  toggleFAQ(item) {
+  toggleFAQ(item, toggle) {
     const isActive = item.classList.contains("active");
     const answer = item.querySelector(".faq-answer");
 
@@ -39,6 +40,7 @@ class FAQ {
       if (otherItem !== item && otherItem.classList.contains("active")) {
         otherItem.classList.remove("active");
         otherItem.querySelector(".faq-answer").style.maxHeight = "0";
+        otherItem.querySelector(".faq-toggle").textContent = "+";
       }
     });
 
@@ -60,11 +62,11 @@ class Testimonials {
       slidesPerView: "auto",
       spaceBetween: 24,
       loop: false,
-      autoplay: {
-        delay: 30000,
-        disableOnInteraction: false,
-        stopOnLastSlide: true,
-      },
+      // autoplay: {
+      //   delay: 30000,
+      //   disableOnInteraction: false,
+      //   stopOnLastSlide: true,
+      // },
       navigation: {
         nextEl: ".button-next",
         prevEl: ".button-prev",
