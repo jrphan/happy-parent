@@ -7,13 +7,13 @@
 }
 
 @media (max-width: 1200px) {
-  .swiper-slide {
+  .swiper-slide-testimonials {
     width: calc((100% - 48px) / 2.2) !important;
   }
 }
 
 @media (max-width: 1024px) {
-  .swiper-slide {
+  .swiper-slide-testimonials {
     width: calc((100% - 24px) / 1.5) !important;
   }
 }
@@ -31,7 +31,7 @@
     padding-right: 0;
   }
 
-  .swiper-slide {
+  .swiper-slide-testimonials {
     width: 100% !important;
   }
 

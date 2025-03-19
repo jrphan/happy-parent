@@ -1,0 +1,45 @@
+@media (max-width: 1200px) {
+}
+
+@media (max-width: 1024px) {
+}
+
+@media (max-width: 768px) {
+  .certificate-section-bg {
+    display: none;
+  }
+
+  .certificate-section {
+    padding: 32px 16px;
+  }
+
+  .certificate-container {
+    padding: 0 12px;
+  }
+
+  .certificate-title {
+    font-size: var(--heading-md);
+    margin-bottom: 12px;
+  }
+
+  .certificate-subtitle {
+    padding: 0 30px;
+    margin-bottom: 32px;
+  }
+
+  .certificate-swiper {
+    padding: 0;
+  }
+
+  .certificate-pagination {
+    display: none;
+  }
+
+  .certificate-section .container {
+    padding: 48px 0;
+  }
+
+  .certificate-footer {
+    justify-content: center;
+  }
+}

@@ -95,11 +95,10 @@ class Testimonials {
       centeredSlides: false,
       grabCursor: true,
       on: {
-        init: () => this.checkNavigationState(),
-        slideChange: () => this.checkNavigationState(),
+        init: () => {},
+        slideChange: () => {},
         resize: () => {
           this.swiper.update();
-          this.checkNavigationState();
           this.updateSwiperContainer();
         },
       },
@@ -112,14 +111,6 @@ class Testimonials {
     this.swiper = new Swiper(".testimonials-swiper", this.swiperConfig);
     this.updateSwiperContainer();
     this.setupResizeListener();
-  }
-
-  checkNavigationState() {
-    const prevButton = document.querySelector(".button-prev");
-    const nextButton = document.querySelector(".button-next");
-
-    prevButton.classList.toggle("disabled", this.swiper.isBeginning);
-    nextButton.classList.toggle("disabled", this.swiper.isEnd);
   }
 
   updateSwiperContainer() {
@@ -149,6 +140,53 @@ class Testimonials {
   }
 }
 
+// Certificate Component
+class Certificate {
+  constructor() {
+    this.swiperConfig = {
+      slidesPerView: 1,
+      spaceBetween: 24,
+      loop: false,
+      pagination: {
+        el: ".certificate-pagination",
+        clickable: true,
+        type: "bullets",
+      },
+      navigation: {
+        nextEl: ".certificate-next",
+        prevEl: ".certificate-prev",
+      },
+      speed: 800,
+      observer: true,
+      observeParents: true,
+      resizeObserver: true,
+      breakpoints: {
+        768: {
+          slidesPerView: 2,
+          spaceBetween: 24,
+        },
+        1024: {
+          slidesPerView: 3,
+          spaceBetween: 24,
+        },
+      },
+      on: {
+        init: () => {},
+        slideChange: () => {},
+        resize: () => {
+          this.swiper.update();
+        },
+      },
+    };
+
+    this.init();
+  }
+
+  init() {
+    this.swiper = new Swiper(".certificate-swiper", this.swiperConfig);
+  }
+}
+
 // App Initialization
 class App {
   constructor() {
@@ -158,6 +196,7 @@ class App {
   initializeModules() {
     this.faq = new FAQ();
     this.testimonials = new Testimonials();
+    this.certificate = new Certificate();
   }
 }
 
