@@ -27,12 +27,11 @@ class FAQ {
   init() {
     this.faqItems.forEach((item) => {
       const question = item.querySelector(".faq-question");
-      const toggle = item.querySelector(".faq-toggle");
-      question.addEventListener("click", () => this.toggleFAQ(item, toggle));
+      question.addEventListener("click", () => this.toggleFAQ(item));
     });
   }
 
-  toggleFAQ(item, toggle) {
+  toggleFAQ(item) {
     const isActive = item.classList.contains("active");
     const answer = item.querySelector(".faq-answer");
 
@@ -40,7 +39,6 @@ class FAQ {
       if (otherItem !== item && otherItem.classList.contains("active")) {
         otherItem.classList.remove("active");
         otherItem.querySelector(".faq-answer").style.maxHeight = "0";
-        otherItem.querySelector(".faq-toggle").textContent = "+";
       }
     });
 
