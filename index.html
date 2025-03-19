@@ -1,81 +1,260 @@
 <!DOCTYPE html>
 <html lang="vi">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Template</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Arsenal:ital,wght@0,400;0,700;1,400;1,700&family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
-    
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Arsenal:ital,wght@0,400;0,700;1,400;1,700&family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- swiper  -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body>
     <!-- FAQ -->
     <section class="faq-section">
-        <div class="faq-section-bg">
-            <img src="images/background_faq.png" alt="FAQ Background">
-        </div>
-        <div class="container">
-            <h2 class="faq-title">Câu Hỏi Thường Gặp</h2>
-            <div class="faq-list">
-                <!-- FAQ Item 1 -->
-                <div class="faq-item active">
-                    <div class="faq-question">
-                        <h3>Dịch Vụ Tham Vấn, Tư Vấn Và Can Thiệp Của Happy Parenting Là Dành Cho Ai?</h3>
-                        <span class="faq-toggle">+</span>
-                    </div>
-                    <div class="faq-answer">
-                        <p>Với phương châm lấy con trẻ làm trung tâm và trao quyền cho cha mẹ chủ động đồng hành cùng con, dịch vụ của Happy Parenting là dành cho cả cha mẹ và trẻ. Chúng tôi cung cấp các giải pháp đánh giá, tư vấn, can thiệp và tập huấn nhằm giúp cha mẹ chủ động hơn trong việc đồng hành cùng con, để con nhận được sự nâng đỡ tốt nhất ngay từ những năm tháng đầu đời.</p>
-                    </div>
-                </div>
-
-                <!-- FAQ Item 2 -->
-                <div class="faq-item">
-                    <div class="faq-question">
-                        <h3>Happy Parenting Có Chương Trình Đánh Giá, Can Thiệp Rối Loạn Phổ Tự Kỷ Không?</h3>
-                        <span class="faq-toggle">+</span>
-                    </div>
-                    <div class="faq-answer">
-                        <p>Với phương châm lấy con trẻ làm trung tâm và trao quyền cho cha mẹ chủ động đồng hành cùng con, dịch vụ của Happy Parenting là dành cho cả cha mẹ và trẻ. Chúng tôi cung cấp các giải pháp đánh giá, tư vấn, can thiệp và tập huấn nhằm giúp cha mẹ chủ động hơn trong việc đồng hành cùng con, để con nhận được sự nâng đỡ tốt nhất ngay từ những năm tháng đầu đời.</p>
-                    </div>
-                </div>
-
-                <!-- FAQ Item 3 -->
-                <div class="faq-item">
-                    <div class="faq-question">
-                        <h3>Dịch Vụ Của Happy Parenting Dành Cho Độ Tuổi Nào?</h3>
-                        <span class="faq-toggle">+</span>
-                    </div>
-                    <div class="faq-answer">
-                        <p>Với phương châm lấy con trẻ làm trung tâm và trao quyền cho cha mẹ chủ động đồng hành cùng con, dịch vụ của Happy Parenting là dành cho cả cha mẹ và trẻ. Chúng tôi cung cấp các giải pháp đánh giá, tư vấn, can thiệp và tập huấn nhằm giúp cha mẹ chủ động hơn trong việc đồng hành cùng con, để con nhận được sự nâng đỡ tốt nhất ngay từ những năm tháng đầu đời.</p>
-                    </div>
-                </div>
-
-                <!-- FAQ Item 4 -->
-                <div class="faq-item">
-                    <div class="faq-question">
-                        <h3>Làm Sao Để Đặt Hẹn Cùng Cô Tú Anh?</h3>
-                        <span class="faq-toggle">+</span>
-                    </div>
-                    <div class="faq-answer">
-                        <p>Với phương châm lấy con trẻ làm trung tâm và trao quyền cho cha mẹ chủ động đồng hành cùng con, dịch vụ của Happy Parenting là dành cho cả cha mẹ và trẻ. Chúng tôi cung cấp các giải pháp đánh giá, tư vấn, can thiệp và tập huấn nhằm giúp cha mẹ chủ động hơn trong việc đồng hành cùng con, để con nhận được sự nâng đỡ tốt nhất ngay từ những năm tháng đầu đời.</p>
-                    </div>
-                </div>
+      <div class="faq-section-bg">
+        <img src="images/background_faq.png" alt="FAQ Background" />
+      </div>
+      <div class="container">
+        <h2 class="faq-title">Câu Hỏi Thường Gặp</h2>
+        <div class="faq-list">
+          <!-- FAQ Item 1 -->
+          <div class="faq-item">
+            <div class="faq-question">
+              <h3>
+                Dịch Vụ Tham Vấn, Tư Vấn Và Can Thiệp Của Happy Parenting Là
+                Dành Cho Ai?
+              </h3>
+              <span class="faq-toggle">+</span>
             </div>
-        </div>
-    </section>
+            <div class="faq-answer">
+              <p>
+                Với phương châm lấy con trẻ làm trung tâm và trao quyền cho cha
+                mẹ chủ động đồng hành cùng con, dịch vụ của Happy Parenting là
+                dành cho cả cha mẹ và trẻ. Chúng tôi cung cấp các giải pháp đánh
+                giá, tư vấn, can thiệp và tập huấn nhằm giúp cha mẹ chủ động hơn
+                trong việc đồng hành cùng con, để con nhận được sự nâng đỡ tốt
+                nhất ngay từ những năm tháng đầu đời.
+              </p>
+            </div>
+          </div>
 
-    <hr class="divider">
+          <!-- FAQ Item 2 -->
+          <div class="faq-item">
+            <div class="faq-question">
+              <h3>
+                Happy Parenting Có Chương Trình Đánh Giá, Can Thiệp Rối Loạn Phổ
+                Tự Kỷ Không?
+              </h3>
+              <span class="faq-toggle">+</span>
+            </div>
+            <div class="faq-answer">
+              <p>
+                Với phương châm lấy con trẻ làm trung tâm và trao quyền cho cha
+                mẹ chủ động đồng hành cùng con, dịch vụ của Happy Parenting là
+                dành cho cả cha mẹ và trẻ. Chúng tôi cung cấp các giải pháp đánh
+                giá, tư vấn, can thiệp và tập huấn nhằm giúp cha mẹ chủ động hơn
+                trong việc đồng hành cùng con, để con nhận được sự nâng đỡ tốt
+                nhất ngay từ những năm tháng đầu đời.
+              </p>
+            </div>
+          </div>
+
+          <!-- FAQ Item 3 -->
+          <div class="faq-item">
+            <div class="faq-question">
+              <h3>Dịch Vụ Của Happy Parenting Dành Cho Độ Tuổi Nào?</h3>
+              <span class="faq-toggle">+</span>
+            </div>
+            <div class="faq-answer">
+              <p>
+                Với phương châm lấy con trẻ làm trung tâm và trao quyền cho cha
+                mẹ chủ động đồng hành cùng con, dịch vụ của Happy Parenting là
+                dành cho cả cha mẹ và trẻ. Chúng tôi cung cấp các giải pháp đánh
+                giá, tư vấn, can thiệp và tập huấn nhằm giúp cha mẹ chủ động hơn
+                trong việc đồng hành cùng con, để con nhận được sự nâng đỡ tốt
+                nhất ngay từ những năm tháng đầu đời.
+              </p>
+            </div>
+          </div>
+
+          <!-- FAQ Item 4 -->
+          <div class="faq-item">
+            <div class="faq-question">
+              <h3>Làm Sao Để Đặt Hẹn Cùng Cô Tú Anh?</h3>
+              <span class="faq-toggle">+</span>
+            </div>
+            <div class="faq-answer">
+              <p>
+                Với phương châm lấy con trẻ làm trung tâm và trao quyền cho cha
+                mẹ chủ động đồng hành cùng con, dịch vụ của Happy Parenting là
+                dành cho cả cha mẹ và trẻ. Chúng tôi cung cấp các giải pháp đánh
+                giá, tư vấn, can thiệp và tập huấn nhằm giúp cha mẹ chủ động hơn
+                trong việc đồng hành cùng con, để con nhận được sự nâng đỡ tốt
+                nhất ngay từ những năm tháng đầu đời.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <!-- Testimonials -->
     <section class="testimonials-section">
-        <div class="container">
-            <h2 class="testimonials-title">Cảm Nhận Của Khách Hàng</h2>
+      <div class="container">
+        <div class="testimonials-header">
+          <div class="testimonials-header-left">
+            <h2 class="testimonials-title">Đánh Giá</h2>
+            <div class="testimonials-subtitle">
+              Phụ Huynh Nói Gì Về Happy Parenting?
+            </div>
+          </div>
+          <div class="testimonials-header-right no-mobile">
+            <!-- Navigation buttons -->
+            <div class="button-prev">
+              <img src="images/arrow_left.png" alt="Chị Tina Nguyen" />
+            </div>
+            <div class="button-next">
+              <img src="images/arrow_right.png" alt="Chị Tina Nguyen" />
+            </div>
+          </div>
         </div>
+      </div>
+      <div class="container">
+        <!-- Swiper -->
+        <div class="swiper testimonials-swiper">
+          <div class="swiper-wrapper">
+            <!-- Slide 1 -->
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <div class="testimonial-content">
+                  <div class="quote-icon">
+                    <img src="images/mark.png" alt="Chị Tina Nguyen" />
+                  </div>
+                  <div class="testimonial-content-quote">
+                    <p>
+                      Làm mẹ của 1 em bé hướng nội và nhạy cảm là thử thách đối
+                      với người năng động và cầu toàn như mình. Khi con gái 20
+                      tháng từ chối ăn uống cộng với kỹ năng nhai kém, mình vô
+                      cùng lo lắng và bất lực. May mắn thay, cô Tú Anh đã đến
+                      như một vị cứu tinh, chiếc phao cứu cánh thật sự. Với sự
+                      hướng dẫn tận tình, chi tiết và trực quan của cô, mình dần
+                      hiểu rõ tâm lý và nhu cầu của con hơn. Chỉ sau 2,5 tháng,
+                      bé đã tự ngồi xúc ăn và không còn sợ hãi như trước nữa.
+                      Thật kỳ diệu!
+                    </p>
+                    <div class="testimonial-author">
+                      <div class="author-avatar">
+                        <img
+                          src="https://s3-alpha-sig.figma.com/img/d973/b17b/466355ffd7ff2084d3977dcc86ddbc11?Expires=1743379200&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=djKSk-iv2dYM6RjuPLyEZljVTseKauU2pFiC83MtJjYRAi2PnD3OPLzgG9bp5nA39wV2UmjMWo0h9IBigPvCBcQZjPdNi0-rtK~dtupTrsSMuaawe7bCfBQATBf5AFbaU~N9Rm1Ltxi5gwyByd9F3FY1kwfAWWHaoUmvlBj7hMxGSu3MTLcXNB3e0oyx5RHscKHh79wbTeHGCmhO0hG1eBBXttLdPPksqsXnZ9rJmdygwQsTd7ML6fSJYnpWagPci~Na7u92ciFwdKYGW1a3Bp8it-Nc8Sg7x5KGWsXEEDY0kid-JyERXyd7KyjOcrX9TUVaB300FnQHoKf-Hs-Pjg__"
+                          alt="Chị Tina Nguyen"
+                        />
+                      </div>
+                      <div class="author-info">
+                        <h4>Chị Tina Nguyen</h4>
+                        <span>Chương trình Nuôi dạy con tích cực</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <div class="testimonial-content">
+                  <div class="quote-icon">
+                    <img src="images/mark.png" alt="Chị Tina Nguyen" />
+                  </div>
+                  <div class="testimonial-content-quote">
+                    <p>
+                      Em chơi được với con em, và con em rất thích luôn. Con
+                      cười, con chơi với em, con kéo em lại chơi. Con không ngồi
+                      lì một chỗ chơi một tiếng đồng hồ chỉ có chơi một trò cắt
+                      ra cắt vô hay chơi quẹt qua mau linh tinh nữa. [...] Đó là
+                      một đứng lục rất tích cực luôn. Ngày xưa em chỉ ước ao làm
+                      sao để con chơi với mình bây giờ? Ngày xưa em chỉ ước ao
+                      làm sao để con chơi với mình bây giờ? Ngày xưa em chỉ ước
+                      ao làm sao để con chơi với mình bây giờ?
+                    </p>
+                    <div class="testimonial-author">
+                      <div class="author-avatar">
+                        <img
+                          src="https://s3-alpha-sig.figma.com/img/d973/b17b/466355ffd7ff2084d3977dcc86ddbc11?Expires=1743379200&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=djKSk-iv2dYM6RjuPLyEZljVTseKauU2pFiC83MtJjYRAi2PnD3OPLzgG9bp5nA39wV2UmjMWo0h9IBigPvCBcQZjPdNi0-rtK~dtupTrsSMuaawe7bCfBQATBf5AFbaU~N9Rm1Ltxi5gwyByd9F3FY1kwfAWWHaoUmvlBj7hMxGSu3MTLcXNB3e0oyx5RHscKHh79wbTeHGCmhO0hG1eBBXttLdPPksqsXnZ9rJmdygwQsTd7ML6fSJYnpWagPci~Na7u92ciFwdKYGW1a3Bp8it-Nc8Sg7x5KGWsXEEDY0kid-JyERXyd7KyjOcrX9TUVaB300FnQHoKf-Hs-Pjg__"
+                          alt="Chị Tina Nguyen"
+                        />
+                      </div>
+                      <div class="author-info">
+                        <h4>Mẹ Ch. Nguyễn</h4>
+                        <span>Chương trình Can thiệp Tự kỷ</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 3 -->
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <div class="testimonial-content">
+                  <div class="quote-icon">
+                    <img src="images/mark.png" alt="Chị Tina Nguyen" />
+                  </div>
+                  <div class="testimonial-content-quote">
+                    <p>
+                      Em đã tham gia chương trình can thiệp sớm của chị Tú Anh.
+                      Chị đã giúp em rất nhiều trong việc đồng hành cùng con. Từ
+                      việc hiểu con đến cách chơi với con, em đã có những tiến
+                      bộ rõ rệt. Chị luôn theo dõi và đồng hành cùng em trong
+                      suốt quá trình thực hiện theo dõi các bài tập. Chị luôn
+                      theo dõi và đồng hành cùng em trong suốt quá trình thực
+                      hiện theo dõi các bài tập.
+                    </p>
+                    <div class="testimonial-author">
+                      <div class="author-avatar">
+                        <img
+                          src="https://s3-alpha-sig.figma.com/img/d973/b17b/466355ffd7ff2084d3977dcc86ddbc11?Expires=1743379200&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=djKSk-iv2dYM6RjuPLyEZljVTseKauU2pFiC83MtJjYRAi2PnD3OPLzgG9bp5nA39wV2UmjMWo0h9IBigPvCBcQZjPdNi0-rtK~dtupTrsSMuaawe7bCfBQATBf5AFbaU~N9Rm1Ltxi5gwyByd9F3FY1kwfAWWHaoUmvlBj7hMxGSu3MTLcXNB3e0oyx5RHscKHh79wbTeHGCmhO0hG1eBBXttLdPPksqsXnZ9rJmdygwQsTd7ML6fSJYnpWagPci~Na7u92ciFwdKYGW1a3Bp8it-Nc8Sg7x5KGWsXEEDY0kid-JyERXyd7KyjOcrX9TUVaB300FnQHoKf-Hs-Pjg__"
+                          alt="Chị Tina Nguyen"
+                        />
+                      </div>
+                      <div class="author-info">
+                        <h4>Hoàng Thị H</h4>
+                        <span>Chương trình Can thiệp sớm</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonials-header-mobile no-desktop">
+          <!-- Navigation buttons -->
+          <div class="button-prev">
+            <img src="images/arrow_left.png" alt="Chị Tina Nguyen" />
+          </div>
+          <div class="button-next">
+            <img src="images/arrow_right.png" alt="Chị Tina Nguyen" />
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- Script -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="script.js"></script>
-</body>
+  </body>
 </html>

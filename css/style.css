@@ -1,0 +1,5 @@
+@import 'base.css';
+@import 'components/faq/faq.css';
+@import 'components/faq/faq_responsive.css';
+@import 'components/testimonials/testimonials.css';
+@import 'components/testimonials/testimonials_responsive.css';

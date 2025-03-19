@@ -1,0 +1,51 @@
+:root {
+  --main-green: #00605c;
+  --secondary-green: #d0e2d6;
+  --main-pink: #fbdaca;
+  --secondary-pink: #fef5ee;
+  --black: #222222;
+  --gray: #8c8c8c;
+  --links: #dc885b;
+
+  --font-primary: "Mulish", "Helvetica Neue", Arial, sans-serif;
+  --font-heading: "Arsenal", "Times New Roman", serif;
+  --font-monospace: "Courier New", Courier, monospace;
+  --font-size-base: 16px;
+  --font-size-lg: 1.25rem;
+  --font-size-md: 1rem;
+  --font-size-sm: 0.875rem;
+  --font-weight-light: 300;
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-bold: 700;
+
+  --heading-2xl: 48px;
+  --tracking-2xl: -0.96px;
+  --heading-xl: 40px;
+  --tracking-xl: -0.8px;
+  --heading-lg: 32px;
+  --tracking-lg: -0.64px;
+  --heading-md: 28px;
+  --tracking-md: -0.56px;
+  --heading-base: 24px;
+  --tracking-base: -0.48px;
+  --heading-sm: 20px;
+  --tracking-sm: -0.4px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--font-primary);
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+} 
