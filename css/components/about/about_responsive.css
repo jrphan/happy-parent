@@ -10,6 +10,7 @@
 @media (max-width: 768px) {
   .about-popup {
     align-items: flex-end;
+    height: 100dvh;
   }
 
   .about-section {
