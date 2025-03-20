@@ -70,7 +70,7 @@
   }
 
   .about-popup-list {
-    max-height: 80vh;
+    max-height: 40dvh;
     overflow-y: auto;
   }
 

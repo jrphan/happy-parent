@@ -207,6 +207,8 @@
   flex-direction: column;
   gap: 16px;
   margin-top: 8px;
+  max-height: 40dvh;
+  overflow-y: auto;
 }
 
 .about-popup-list-item {
