@@ -42,6 +42,10 @@
     font-size: var(--heading-base);
   }
 
+  .about-section .container .about-content {
+    gap: 20px;
+  }
+
   .about-popup-content {
     max-width: 85%;
   }
