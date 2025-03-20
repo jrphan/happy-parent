@@ -1,0 +1,24 @@
+@media (max-width: 1200px) {
+}
+
+@media (max-width: 1024px) {
+}
+
+@media (max-width: 768px) {
+  .event-section {
+    padding: 48px 0;
+  }
+
+  .event-section .event-title {
+    font-size: var(--heading-md);
+  }
+
+  .event-footer {
+    margin-top: 32px;
+    justify-content: center;
+  }
+
+  .event-footer .event-navigation {
+    display: none;
+  }
+}
