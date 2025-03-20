@@ -187,6 +187,43 @@ class Certificate {
   }
 }
 
+// Gallery Component
+class Gallery {
+  constructor() {
+    this.swiperConfig = {
+      slidesPerView: "auto",
+      spaceBetween: 32,
+      loop: false,
+      navigation: {
+        nextEl: ".button-next-gallery",
+        prevEl: ".button-prev-gallery",
+      },
+      speed: 800,
+      observer: true,
+      observeParents: true,
+      resizeObserver: true,
+      breakpoints: {
+        768: {
+          spaceBetween: 24,
+        },
+      },
+      on: {
+        init: () => {},
+        slideChange: () => {},
+        resize: () => {
+          this.swiper.update();
+        },
+      },
+    };
+
+    this.init();
+  }
+
+  init() {
+    this.swiper = new Swiper(".gallery-swiper", this.swiperConfig);
+  }
+}
+
 // App Initialization
 class App {
   constructor() {
@@ -197,6 +234,7 @@ class App {
     this.faq = new FAQ();
     this.testimonials = new Testimonials();
     this.certificate = new Certificate();
+    this.gallery = new Gallery();
   }
 }
 
