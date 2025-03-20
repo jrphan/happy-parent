@@ -2,12 +2,6 @@
   padding: 120px 0;
 }
 
-.gallery-title {
-  font-size: 48px;
-  font-weight: 700;
-  color: #000;
-}
-
 .gallery-header {
   display: flex;
   align-items: flex-end;

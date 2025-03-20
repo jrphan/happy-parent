@@ -1,3 +1,156 @@
+const aboutData = {
+  1: {
+    title: "DIR/FLOORTIME®: Coaching Caregivers & Teachers",
+    list: [
+      {
+        title:
+          "DIR/FLOORTIME®: Phương pháp DIR/Floortime được sáng lập bởi bác sĩ Stanley Greenspan, đại học Havard và Yale, cùng với tiến sĩ Serena Wieder, đại học New York. Phương pháp này chú trọng vào 6 năng lực phát triển cảm xúc ở tất cả trẻ em, đặc biệt là các em Phổ Tự Kỷ.",
+        icon: "images/heart.png",
+      },
+      {
+        title:
+          "DIR/FLOORTIME®: Phương pháp DIR/Floortime được sáng lập bởi bác sĩ Stanley Greenspan, đại học Havard và Yale, cùng với tiến sĩ Serena Wieder, đại học New York. Phương pháp này chú trọng vào 6 năng lực phát triển cảm xúc ở tất cả trẻ em, đặc biệt là các em Phổ Tự Kỷ.",
+        icon: "images/heart.png",
+      },
+    ],
+  },
+  2: {
+    title: "Parent-Child Interaction Therapy (PCIT)",
+    list: [
+      {
+        title:
+          "DIR/FLOORTIME®: Phương pháp DIR/Floortime được sáng lập bởi bác sĩ Stanley Greenspan, đại học Havard và Yale, cùng với tiến sĩ Serena Wieder, đại học New York. Phương pháp này chú trọng vào 6 năng lực phát triển cảm xúc ở tất cả trẻ em, đặc biệt là các em Phổ Tự Kỷ.",
+        icon: "images/heart.png",
+      },
+      {
+        title:
+          "DIR/FLOORTIME®: Phương pháp DIR/Floortime được sáng lập bởi bác sĩ Stanley Greenspan, đại học Havard và Yale, cùng với tiến sĩ Serena Wieder, đại học New York. Phương pháp này chú trọng vào 6 năng lực phát triển cảm xúc ở tất cả trẻ em, đặc biệt là các em Phổ Tự Kỷ.",
+        icon: "images/heart.png",
+      },
+    ],
+  },
+  3: {
+    title: "Touchpoints: The How of Child and Family Engagement",
+    list: [
+      {
+        title:
+          "DIR/FLOORTIME®: Phương pháp DIR/Floortime được sáng lập bởi bác sĩ Stanley Greenspan, đại học Havard và Yale, cùng với tiến sĩ Serena Wieder, đại học New York. Phương pháp này chú trọng vào 6 năng lực phát triển cảm xúc ở tất cả trẻ em, đặc biệt là các em Phổ Tự Kỷ.",
+        icon: "images/heart.png",
+      },
+      {
+        title:
+          "DIR/FLOORTIME®: Phương pháp DIR/Floortime được sáng lập bởi bác sĩ Stanley Greenspan, đại học Havard và Yale, cùng với tiến sĩ Serena Wieder, đại học New York. Phương pháp này chú trọng vào 6 năng lực phát triển cảm xúc ở tất cả trẻ em, đặc biệt là các em Phổ Tự Kỷ.",
+        icon: "images/heart.png",
+      },
+    ],
+  },
+  4: {
+    title: "Mentalization-Based Treatment for Children (MBT-C)",
+    list: [
+      {
+        title:
+          "DIR/FLOORTIME®: Phương pháp DIR/Floortime được sáng lập bởi bác sĩ Stanley Greenspan, đại học Havard và Yale, cùng với tiến sĩ Serena Wieder, đại học New York. Phương pháp này chú trọng vào 6 năng lực phát triển cảm xúc ở tất cả trẻ em, đặc biệt là các em Phổ Tự Kỷ.",
+        icon: "images/heart.png",
+      },
+      {
+        title:
+          "DIR/FLOORTIME®: Phương pháp DIR/Floortime được sáng lập bởi bác sĩ Stanley Greenspan, đại học Havard và Yale, cùng với tiến sĩ Serena Wieder, đại học New York. Phương pháp này chú trọng vào 6 năng lực phát triển cảm xúc ở tất cả trẻ em, đặc biệt là các em Phổ Tự Kỷ.",
+        icon: "images/heart.png",
+      },
+    ],
+  },
+  5: {
+    title: "The PLAY Project - Play & Language for Autistic Youngsters",
+    list: [
+      {
+        title:
+          "DIR/FLOORTIME®: Phương pháp DIR/Floortime được sáng lập bởi bác sĩ Stanley Greenspan, đại học Havard và Yale, cùng với tiến sĩ Serena Wieder, đại học New York. Phương pháp này chú trọng vào 6 năng lực phát triển cảm xúc ở tất cả trẻ em, đặc biệt là các em Phổ Tự Kỷ.",
+        icon: "images/heart.png",
+      },
+      {
+        title:
+          "DIR/FLOORTIME®: Phương pháp DIR/Floortime được sáng lập bởi bác sĩ Stanley Greenspan, đại học Havard và Yale, cùng với tiến sĩ Serena Wieder, đại học New York. Phương pháp này chú trọng vào 6 năng lực phát triển cảm xúc ở tất cả trẻ em, đặc biệt là các em Phổ Tự Kỷ.",
+        icon: "images/heart.png",
+      },
+    ],
+  },
+  6: {
+    title: "Accredited Triple P Provider, Levels 2, 3, 4, 5",
+    list: [
+      {
+        title:
+          "DIR/FLOORTIME®: Phương pháp DIR/Floortime được sáng lập bởi bác sĩ Stanley Greenspan, đại học Havard và Yale, cùng với tiến sĩ Serena Wieder, đại học New York. Phương pháp này chú trọng vào 6 năng lực phát triển cảm xúc ở tất cả trẻ em, đặc biệt là các em Phổ Tự Kỷ.",
+        icon: "images/heart.png",
+      },
+      {
+        title:
+          "DIR/FLOORTIME®: Phương pháp DIR/Floortime được sáng lập bởi bác sĩ Stanley Greenspan, đại học Havard và Yale, cùng với tiến sĩ Serena Wieder, đại học New York. Phương pháp này chú trọng vào 6 năng lực phát triển cảm xúc ở tất cả trẻ em, đặc biệt là các em Phổ Tự Kỷ.",
+        icon: "images/heart.png",
+      },
+    ],
+  },
+  7: {
+    title: "The Incredible Years: Parents, Teachers, and Children Training",
+    list: [
+      {
+        title:
+          "DIR/FLOORTIME®: Phương pháp DIR/Floortime được sáng lập bởi bác sĩ Stanley Greenspan, đại học Havard và Yale, cùng với tiến sĩ Serena Wieder, đại học New York. Phương pháp này chú trọng vào 6 năng lực phát triển cảm xúc ở tất cả trẻ em, đặc biệt là các em Phổ Tự Kỷ.",
+        icon: "images/heart.png",
+      },
+      {
+        title:
+          "DIR/FLOORTIME®: Phương pháp DIR/Floortime được sáng lập bởi bác sĩ Stanley Greenspan, đại học Havard và Yale, cùng với tiến sĩ Serena Wieder, đại học New York. Phương pháp này chú trọng vào 6 năng lực phát triển cảm xúc ở tất cả trẻ em, đặc biệt là các em Phổ Tự Kỷ.",
+        icon: "images/heart.png",
+      },
+    ],
+  },
+  8: {
+    title: "Circle of Security Parenting™ (COSP) program facilitator",
+    list: [
+      {
+        title:
+          "DIR/FLOORTIME®: Phương pháp DIR/Floortime được sáng lập bởi bác sĩ Stanley Greenspan, đại học Havard và Yale, cùng với tiến sĩ Serena Wieder, đại học New York. Phương pháp này chú trọng vào 6 năng lực phát triển cảm xúc ở tất cả trẻ em, đặc biệt là các em Phổ Tự Kỷ.",
+        icon: "images/heart.png",
+      },
+      {
+        title:
+          "DIR/FLOORTIME®: Phương pháp DIR/Floortime được sáng lập bởi bác sĩ Stanley Greenspan, đại học Havard và Yale, cùng với tiến sĩ Serena Wieder, đại học New York. Phương pháp này chú trọng vào 6 năng lực phát triển cảm xúc ở tất cả trẻ em, đặc biệt là các em Phổ Tự Kỷ.",
+        icon: "images/heart.png",
+      },
+    ],
+  },
+  9: {
+    title: "Trauma-Focused Cognitive Behavioral Therapy (TF-CBT)",
+    list: [
+      {
+        title:
+          "DIR/FLOORTIME®: Phương pháp DIR/Floortime được sáng lập bởi bác sĩ Stanley Greenspan, đại học Havard và Yale, cùng với tiến sĩ Serena Wieder, đại học New York. Phương pháp này chú trọng vào 6 năng lực phát triển cảm xúc ở tất cả trẻ em, đặc biệt là các em Phổ Tự Kỷ.",
+        icon: "images/heart.png",
+      },
+      {
+        title:
+          "DIR/FLOORTIME®: Phương pháp DIR/Floortime được sáng lập bởi bác sĩ Stanley Greenspan, đại học Havard và Yale, cùng với tiến sĩ Serena Wieder, đại học New York. Phương pháp này chú trọng vào 6 năng lực phát triển cảm xúc ở tất cả trẻ em, đặc biệt là các em Phổ Tự Kỷ.",
+        icon: "images/heart.png",
+      },
+    ],
+  },
+  10: {
+    title: "ZERO TO THREE: Professional Development",
+    list: [
+      {
+        title:
+          "DIR/FLOORTIME®: Phương pháp DIR/Floortime được sáng lập bởi bác sĩ Stanley Greenspan, đại học Havard và Yale, cùng với tiến sĩ Serena Wieder, đại học New York. Phương pháp này chú trọng vào 6 năng lực phát triển cảm xúc ở tất cả trẻ em, đặc biệt là các em Phổ Tự Kỷ.",
+        icon: "images/heart.png",
+      },
+      {
+        title:
+          "DIR/FLOORTIME®: Phương pháp DIR/Floortime được sáng lập bởi bác sĩ Stanley Greenspan, đại học Havard và Yale, cùng với tiến sĩ Serena Wieder, đại học New York. Phương pháp này chú trọng vào 6 năng lực phát triển cảm xúc ở tất cả trẻ em, đặc biệt là các em Phổ Tự Kỷ.",
+        icon: "images/heart.png",
+      },
+    ],
+  },
+};
+
 // Utility functions
 const Utils = {
   debounce(func, wait) {
@@ -133,7 +286,6 @@ class Testimonials {
       "resize",
       Utils.debounce(() => {
         this.swiper.update();
-        this.checkNavigationState();
         this.updateSwiperContainer();
       }, 250)
     );
@@ -261,18 +413,107 @@ class Event {
   }
 }
 
+// About Component
+class About {
+  constructor(aboutData) {
+    this.popup = document.querySelector(".about-popup");
+    this.overlay = document.querySelector(".about-popup-overlay");
+    this.closeBtn = document.querySelector(".about-popup-close");
+    this.aboutItems = document.querySelectorAll(".about-content-item");
+    this.popupIcon = document.querySelector(".about-popup-icon img");
+    this.popupTitle = document.querySelector(".about-popup-title");
+    this.popupDescription = document.querySelector(".about-popup-description");
+    this.popupList = document.querySelector(".about-popup-list");
+
+    this.aboutData = aboutData;
+
+    this.init();
+  }
+
+  init() {
+    this.aboutItems.forEach((item) => {
+      item.addEventListener("click", () => {
+        const id = item.getAttribute("data-id");
+        const data = this.aboutData[id];
+        if (data) {
+          this.showPopup(item, data);
+        }
+      });
+    });
+
+    this.closeBtn.addEventListener("click", () => this.hidePopup());
+    this.overlay.addEventListener("click", () => this.hidePopup());
+    document.addEventListener("keydown", (e) => {
+      if (e.key === "Escape") this.hidePopup();
+    });
+  }
+
+  showPopup(item, data) {
+    console.log(item, data, "debug");
+    const list = data?.list || [];
+    this.popupTitle.textContent = data.title;
+    list.forEach((item) => {
+      const listItem = document.createElement("div");
+      listItem.classList.add("about-popup-list-item");
+      listItem.innerHTML = `
+        <div class="about-popup-list-item-icon">
+          <img src="${item.icon}" alt="${item.title}">
+        </div>
+        <p class="about-popup-list-item-title">${item.title}</p>
+      `;
+      this.popupList.appendChild(listItem);
+    });
+
+    this.popup.classList.add("active");
+  }
+
+  hidePopup() {
+    this.popup.classList.remove("active");
+    this.popupList.innerHTML = "";
+    document.body.style.overflow = "";
+  }
+
+  destroy() {
+    this.aboutItems.forEach((item) => {
+      item.removeEventListener("click", () => {});
+    });
+    this.closeBtn.removeEventListener("click", () => {});
+    this.overlay.removeEventListener("click", () => {});
+    document.removeEventListener("keydown", () => {});
+    this.popup.removeEventListener("transitionend", () => {});
+    this.popupList.innerHTML = "";
+  }
+}
+
 // App Initialization
 class App {
   constructor() {
+    this.modules = {};
     this.initializeModules();
   }
 
   initializeModules() {
-    this.faq = new FAQ();
-    this.testimonials = new Testimonials();
-    this.certificate = new Certificate();
-    this.gallery = new Gallery();
-    this.event = new Event();
+    try {
+      window.addEventListener("load", () => {
+        this.modules.faq = new FAQ();
+        this.modules.testimonials = new Testimonials();
+        this.modules.certificate = new Certificate();
+        this.modules.gallery = new Gallery();
+        this.modules.event = new Event();
+        this.modules.about = new About(aboutData);
+      });
+    } catch (error) {
+      console.error("Error initializing modules:", error);
+    }
+  }
+
+  destroy() {
+    Object.values(this.modules).forEach((module) => {
+      if (module && typeof module.destroy === "function") {
+        module.destroy();
+      }
+    });
+    this.modules = {};
   }
 }
 
