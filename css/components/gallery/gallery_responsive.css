@@ -5,11 +5,9 @@
 }
 
 @media (max-width: 768px) {
-
-    .gallery-section {
-        padding: 64px 0;
-      }
-      
+  .gallery-section {
+    padding: 64px 0;
+  }
 
   .swiper-slide-gallery {
     width: 100%;

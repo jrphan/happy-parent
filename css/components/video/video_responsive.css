@@ -1,0 +1,26 @@
+@media (max-width: 1200px) {
+}
+
+@media (max-width: 1024px) {
+  .video-content {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .video-content {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .video-header .video-title {
+    font-size: var(--heading-md);
+  }
+
+  .video-content-item-title {
+    padding: 20px;
+  }
+
+  .video-content-item-title h3 {
+    font-size: 18px;
+  }
+}

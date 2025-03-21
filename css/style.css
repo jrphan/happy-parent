@@ -11,3 +11,7 @@
 @import "components/event/event_responsive.css";
 @import "components/about/about.css";
 @import "components/about/about_responsive.css";
+@import "components/video/video.css";
+@import "components/video/video_responsive.css";
+@import "components/podcast/podcast.css";
+@import "components/podcast/podcast_responsive.css";
