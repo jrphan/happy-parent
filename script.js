@@ -639,7 +639,7 @@ class Video {
     document.body.classList.remove("popup-open");
     this.popup.classList.remove("active");
     const container = this.popup.querySelector(".video-popup-iframe");
-    container.innerHTML = ""; // Remove iframe to stop video
+    container.innerHTML = "";
   }
 }
 
@@ -699,7 +699,6 @@ class Podcast {
     const audioElements = document.querySelectorAll(".podcast-audio");
 
     audioElements.forEach((audio) => {
-      // Get duration when metadata is loaded
       audio.addEventListener("loadedmetadata", () => {
         const duration = this.formatTime(audio.duration);
         audio
@@ -712,7 +711,6 @@ class Podcast {
       button.addEventListener("click", () => {
         const audio = audioElements[index];
 
-        // If there's a currently playing audio, pause it
         if (this.currentAudio && this.currentAudio !== audio) {
           this.currentAudio.pause();
           this.currentAudio.currentTime = 0;
@@ -743,7 +741,6 @@ class Podcast {
         .closest(".podcast-item")
         .querySelector(".podcast-time-current");
 
-      // Add click event for seeking
       progressBarContainer.addEventListener("click", (e) => {
         const rect = progressBarContainer.getBoundingClientRect();
         const percent = (e.clientX - rect.left) / rect.width;
