@@ -1,0 +1,19 @@
+@media (max-width: 1200px) {
+}
+
+@media (max-width: 1024px) {
+}
+
+@media (max-width: 768px) {
+  .banner-section {
+    padding: 32px 0;
+  }
+
+  .banner-section-bg img {
+    display: none;
+  }
+
+  .banner-title {
+    font-size: var(--heading-lg);
+  }
+}
