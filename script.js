@@ -670,19 +670,31 @@ class Podcast {
           <img src="${podcast.image}" alt="${podcast.title}">
         </div>
         <div class="podcast-item-content">
-          <h3 class="podcast-item-title">${podcast.title}</h3>
-          <div class="podcast-item-subtitle">${podcast.subtitle}</div>
+          <div class="podcast-item-info">
+            <div class="podcast-image-mobile">
+              <img src="${podcast.image}" alt="${podcast.title}">
+              <h5 class="podcast-item-title">${podcast.title}</h5>
+            </div>
+            <div class="podcast-item-subtitle">${podcast.subtitle}</div>
+          </div>
           <div class="podcast-item-player">
             <div class="podcast-item-play" data-audio="${podcast.audioUrl}">
-            Play
+              <img src="images/play.svg" alt="Play">
             </div>
             <div class="podcast-item-progress">
-              <div class="podcast-progress-bar">
-                <div class="podcast-progress-filled"></div>
-              </div>
-              <div class="podcast-time">
                 <span class="podcast-time-current">0:00</span>
+                <div class="podcast-progress-bar">
+                  <div class="podcast-progress-filled"></div>
+                </div>
                 <span class="podcast-time-duration">Loading...</span>
+            </div>
+            <div class="podcast-item-volumn">
+              <img src="images/volume.svg" alt="Volume">
+              <div class="volume-slider">
+                <div class="volume-slider-track">
+                  <div class="volume-slider-fill" style="height: 100%"></div>
+                  <div class="volume-slider-handle" style="bottom: 90%"></div>
+                </div>
               </div>
             </div>
           </div>
@@ -697,6 +709,61 @@ class Podcast {
   addEventListeners() {
     const playButtons = document.querySelectorAll(".podcast-item-play");
     const audioElements = document.querySelectorAll(".podcast-audio");
+    const volumeSliders = document.querySelectorAll(".volume-slider-track");
+
+    volumeSliders.forEach((slider, index) => {
+      const audio = audioElements[index];
+      const fill = slider.querySelector(".volume-slider-fill");
+      const handle = slider.querySelector(".volume-slider-handle");
+
+      audio.volume = 1;
+
+      const updateVolume = (e) => {
+        const rect = slider.getBoundingClientRect();
+        let volume = 1 - (e.clientY - rect.top) / rect.height;
+
+        volume = Math.max(0, Math.min(1, volume));
+        audio.volume = volume;
+
+        fill.style.height = `${volume * 100}%`;
+        handle.style.bottom = `${volume * 90}%`;
+      };
+
+      slider.addEventListener("mousedown", (e) => {
+        updateVolume(e);
+
+        const onMouseMove = (e) => {
+          updateVolume(e);
+        };
+
+        const onMouseUp = () => {
+          document.removeEventListener("mousemove", onMouseMove);
+          document.removeEventListener("mouseup", onMouseUp);
+        };
+
+        document.addEventListener("mousemove", onMouseMove);
+        document.addEventListener("mouseup", onMouseUp);
+      });
+
+      const volumeIcon = slider
+        .closest(".podcast-item-volumn")
+        .querySelector("img");
+      let lastVolume = 1;
+
+      volumeIcon.addEventListener("click", (e) => {
+        e.stopPropagation();
+        if (audio.volume > 0) {
+          lastVolume = audio.volume;
+          audio.volume = 0;
+          fill.style.height = "0%";
+          handle.style.bottom = "0%";
+        } else {
+          audio.volume = lastVolume;
+          fill.style.height = `${lastVolume * 100}%`;
+          handle.style.bottom = `${lastVolume * 90}%`;
+        }
+      });
+    });
 
     audioElements.forEach((audio) => {
       audio.addEventListener("loadedmetadata", () => {
