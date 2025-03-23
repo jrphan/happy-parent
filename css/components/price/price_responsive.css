@@ -1,0 +1,31 @@
+@media (max-width: 992px) {
+    .price-section .price-content {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 40px;
+    }
+
+    .price-item {
+        gap: 20px;
+        padding: 40px 32px;
+    }
+
+    .price-item-header {
+        font-size: 14px;
+    }
+
+    .price-item .price-item-title {
+        font-size: var(--heading-sm);
+    }
+
+    .price-item-description .price {
+        font-size: var(--heading-sm);
+    }
+
+    .price-item-description p {
+        font-size: 14px;
+    }
+
+    .price-item-description {
+        margin-top: 12px;
+    }
+}
