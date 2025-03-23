@@ -1,0 +1,49 @@
+@media (max-width: 1200px) {
+}
+
+@media (max-width: 992px) {
+  .service-contact-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0;
+  }
+
+  .service-contact-item {
+    border: 2px solid var(--main-pink);
+    width: 330px;
+    height: 330px;
+  }
+
+  .service-contact-item-1 {
+    z-index: 1;
+    margin: 0;
+  }
+
+  .service-contact-item-2 {
+    margin: 0;
+    margin-top: -25px;
+    z-index: 2;
+  }
+
+  .service-contact-item-3 {
+    margin: 0;
+    margin-top: -25px;
+    z-index: 3;
+  }
+
+  .service-contact-item-4 {
+    margin: 0;
+    margin-top: -25px;
+    z-index: 4;
+  }
+
+  .service-contact-item .service-contact-item-content {
+    margin-bottom: 40px;
+  }
+
+  .service-contact-item .service-contact-item-button {
+    bottom: 70px;
+  }
+}

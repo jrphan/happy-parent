@@ -1,9 +1,9 @@
-.procedure-section {
+.service-contact-section {
   padding: 100px 0;
   background-color: #fff;
 }
 
-.procedure-content {
+.service-contact-content {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -11,29 +11,29 @@
   gap: 0;
 }
 
-.procedure-item-1 {
+.service-contact-item-1 {
   z-index: 1;
 }
 
-.procedure-item-2 {
+.service-contact-item-2 {
   margin-left: -20px;
   z-index: 2;
 }
 
-.procedure-item-3 {
+.service-contact-item-3 {
   margin-left: -20px;
   z-index: 3;
 }
 
-.procedure-item-4 {
+.service-contact-item-4 {
   margin-left: -20px;
   z-index: 4;
 }
 
-.procedure-item {
+.service-contact-item {
   border: 2px solid var(--main-pink);
-  width: 330px;
-  height: 330px;
+  width: 380px;
+  height: 380px;
   border-radius: 50%;
   display: flex;
   flex-direction: column;
@@ -45,7 +45,7 @@
   background-color: var(--secondary-pink);
 }
 
-.procedure-item .procedure-item-title h3 {
+.service-contact-item .service-contact-item-title h3 {
   font-family: var(--font-heading);
   color: var(--main-green);
   font-size: var(--heading-base);
@@ -54,7 +54,7 @@
   line-height: 130%;
 }
 
-.procedure-item .procedure-item-content {
+.service-contact-item .service-contact-item-content {
   font-family: var(--font-primary);
   font-size: var(--font-size-base);
   font-weight: 600;
@@ -63,7 +63,7 @@
   line-height: 150%;
 }
 
-.procedure-item .procedure-item-icon {
+.service-contact-item .service-contact-item-icon {
   position: absolute;
   top: -34px;
   left: 50%;
@@ -71,17 +71,23 @@
   z-index: 10;
 }
 
-.procedure-item .procedure-item-icon .procedure-item-icon-bg {
+.service-contact-item .service-contact-item-icon .service-contact-item-icon-bg {
   position: relative;
 }
 
-.procedure-item .procedure-item-icon .procedure-item-icon-bg img {
+.service-contact-item
+  .service-contact-item-icon
+  .service-contact-item-icon-bg
+  img {
   width: 82px;
   height: auto;
   object-fit: contain;
 }
 
-.procedure-item .procedure-item-icon .procedure-item-icon-bg span {
+.service-contact-item
+  .service-contact-item-icon
+  .service-contact-item-icon-bg
+  span {
   position: absolute;
   top: 0;
   left: 0;
@@ -96,4 +102,22 @@
   color: white;
   line-height: 130%;
   text-align: center;
+}
+
+.service-contact-item .service-contact-item-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  font-family: var(--font-primary);
+  font-size: var(--font-size-base);
+  font-weight: var(--font-weight-bold);
+  color: var(--links);
+  text-align: center;
+  line-height: 150%;
+  position: absolute;
+  bottom: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+  cursor: pointer;
 }
