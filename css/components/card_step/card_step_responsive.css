@@ -1,0 +1,19 @@
+@media (max-width: 992px) {
+  .card-step-section {
+    padding: 40px 0;
+  }
+
+  .card-step-content {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+  }
+
+  .card-step-item .card-step-item-tag {
+    margin-bottom: 32px;
+  }
+
+  .card-step-item .card-step-item-title {
+    margin-bottom: 12px;
+    font-size: var(--heading-sm);
+  }
+}
