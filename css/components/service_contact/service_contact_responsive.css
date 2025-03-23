@@ -46,4 +46,56 @@
   .service-contact-item .service-contact-item-button {
     bottom: 70px;
   }
+
+  .service-contact-modal-title {
+    font-size: var(--heading-base);
+  }
+
+  .service-contact-modal-list-item-description {
+    font-size: var(--font-size-base);
+  }
+
+  .service-contact-section .container .service-contact-content {
+    gap: 20px;
+  }
+
+  .service-contact-modal-content {
+    max-width: 100%;
+    border-radius: 16px 16px 0 0;
+    transform: translateY(100%) scale(1);
+    transition: all 0.5s ease !important;
+  }
+
+  .service-contact-modal .service-contact-modal-content {
+    transform: translateY(100%) scale(1);
+    transition: all 0.5s ease !important;
+  }
+
+  .service-contact-modal.active .service-contact-modal-content {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+    transition: all 0.5s ease !important;
+  }
+
+  .service-contact-modal-list {
+    max-height: 60dvh;
+    overflow-y: auto;
+  }
+
+  .service-contact-modal-body {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 24px;
+  }
+
+  .service-contact-modal-close {
+    right: 15px;
+    top: -22px;
+  }
+
+  .service-contact-modal {
+    align-items: flex-end;
+    height: 100dvh;
+  }
 }

@@ -531,7 +531,6 @@ class About {
   hidePopup() {
     this.popup.classList.remove("active");
     this.popupList.innerHTML = "";
-    document.body.style.overflow = "";
   }
 
   destroy() {
@@ -843,6 +842,128 @@ class Podcast {
   }
 }
 
+// Service Contact Component
+class ServiceContact {
+  constructor() {
+    this.modal = document.querySelector(".service-contact-modal");
+    this.overlay = document.querySelector(".service-contact-modal-overlay");
+    this.closeBtn = document.querySelector(".service-contact-modal-close");
+    this.buttons = document.querySelectorAll(".service-contact-item-button");
+    this.modalTitle = document.querySelector(".service-contact-modal-title");
+    this.modalDescription = document.querySelector(
+      ".service-contact-modal-description"
+    );
+    this.modalList = document.querySelector(".service-contact-modal-list");
+
+    this.serviceData = {
+      1: {
+        title: "Mầm non & Trường Học",
+        description:
+          "Diễn giả & Tập huấn nâng cao phát triển chuyên môn về Tâm lý – Phát triển Nhi theo yêu cầu.",
+        list: [
+          {
+            title:
+              "Đào tạo nâng cao về Tâm lý - Phát triển Nhi cho đội ngũ giáo viên",
+            icon: "images/heart.png",
+          },
+          {
+            title: "Diễn giả Hội thảo dành cho Phụ huynh của trường",
+            icon: "images/heart.png",
+          },
+        ],
+      },
+      2: {
+        title: "Tổ chức và doanh nghiệp",
+        description:
+          "Đào tạo nội bộ, nâng cao chất lượng cuộc sống và tinh thần cho nhân sự trong vai trò làm cha mẹ.",
+        list: [
+          {
+            title:
+              "Đào tạo nâng cao về Tâm lý - Phát triển Nhi cho đội ngũ giáo viên",
+            icon: "images/heart.png",
+          },
+          {
+            title: "Diễn giả Hội thảo dành cho Phụ huynh của trường",
+            icon: "images/heart.png",
+          },
+        ],
+      },
+      3: {
+        title: "Nhãn hàng & thương mại",
+        description:
+          "Đồng hành cùng lan tỏa thông điệp 'Cha mẹ vui vẻ - Con trẻ hạnh phúc'.",
+        list: [
+          {
+            title:
+              "Đào tạo nâng cao về Tâm lý - Phát triển Nhi cho đội ngũ giáo viên",
+            icon: "images/heart.png",
+          },
+          {
+            title: "Diễn giả Hội thảo dành cho Phụ huynh của trường",
+            icon: "images/heart.png",
+          },
+        ],
+      },
+    };
+
+    this.init();
+  }
+
+  init() {
+    this.buttons.forEach((button, index) => {
+      button.addEventListener("click", () => {
+        const id = index + 1;
+        const data = this.serviceData[id];
+        if (data) {
+          this.showModal(data);
+        }
+      });
+    });
+
+    this.closeBtn.addEventListener("click", () => this.hideModal());
+    this.overlay.addEventListener("click", () => this.hideModal());
+    document.addEventListener("keydown", (e) => {
+      if (e.key === "Escape") this.hideModal();
+    });
+  }
+
+  showModal(data) {
+    const list = data?.list || [];
+    this.modalTitle.textContent = data.title;
+    this.modalDescription.textContent = data.description;
+    this.modalList.innerHTML = "";
+
+    list.forEach((item) => {
+      const listItem = document.createElement("div");
+      listItem.classList.add("service-contact-modal-list-item");
+      listItem.innerHTML = `
+        <div class="service-contact-modal-list-item-icon">
+          <img src="${item.icon}" alt="${item.title}">
+        </div>
+        <p class="service-contact-modal-list-item-title">${item.title}</p>
+      `;
+      this.modalList.appendChild(listItem);
+    });
+
+    this.modal.classList.add("active");
+  }
+
+  hideModal() {
+    this.modal.classList.remove("active");
+    this.modalList.innerHTML = "";
+  }
+
+  destroy() {
+    this.buttons.forEach((button) => {
+      button.removeEventListener("click", () => {});
+    });
+    this.closeBtn.removeEventListener("click", () => {});
+    this.overlay.removeEventListener("click", () => {});
+    document.removeEventListener("keydown", () => {});
+    this.modalList.innerHTML = "";
+  }
+}
+
 // App Initialization
 class App {
   constructor() {
@@ -861,6 +982,7 @@ class App {
         this.modules.about = new About(aboutData);
         this.modules.video = new Video(videoData);
         this.modules.podcast = new Podcast(podcastData);
+        this.modules.serviceContact = new ServiceContact();
       });
     } catch (error) {
       console.error("Error initializing modules:", error);
