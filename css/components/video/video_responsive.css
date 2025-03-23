@@ -1,13 +1,10 @@
 @media (max-width: 1200px) {
-}
-
-@media (max-width: 1024px) {
   .video-content {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 992px) {
 
   .video-section {
     padding: 32px 0;
