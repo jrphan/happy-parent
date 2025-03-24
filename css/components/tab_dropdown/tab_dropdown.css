@@ -3,9 +3,50 @@
   background-color: white;
 }
 
+.tab-desktop {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.tab-desktop-item {
+  padding: 8px 16px;
+  border-radius: 8px;
+  border: 1px solid var(--gray);
+  cursor: pointer;
+
+}
+
+.tab-desktop-item h3 {
+  font-size: var(--font-size-base);
+  font-weight: var(--font-weight-bold);
+  color: var(--gray);
+  line-height: 150%;
+}
+
+.tab-desktop-item:hover {
+  border-color: var(--links);
+}
+
+.tab-desktop-item:hover h3 {
+  color: var(--links);
+}
+
+.tab-desktop-item.active {
+  background-color: var(--links);
+  border-color: var(--links);
+}
+
+.tab-desktop-item.active h3 {
+  color: white;
+}
+
+
+/* Tab mobile  */
 .tab-dropdown-select {
   position: relative;
   width: 100%;
+  display: none;
 }
 
 .tab-dropdown-select select {
