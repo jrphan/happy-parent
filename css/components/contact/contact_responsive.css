@@ -1,0 +1,27 @@
+@media (max-width: 992px) {
+  .contact-section {
+    padding: 40px 0;
+  }
+
+  .contact-map {
+    height: 240px;
+  }
+
+  .contact-info {
+    gap: 20px;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .contact-info .contact-info-item {
+    padding: 24px;
+    gap: 12px;
+  }
+
+  .contact-info .contact-info-item .contact-item-title {
+    font-size: var(--heading-sm);
+  }
+
+  .contact-info .contact-info-item .contact-item-desc span {
+    font-size: 18px;
+  }
+}
