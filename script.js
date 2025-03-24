@@ -964,6 +964,48 @@ class ServiceContact {
   }
 }
 
+// Tab Dropdown Component
+class TabDropdown {
+  constructor() {
+    this.dropdown = document.querySelector(".tab-dropdown-select");
+    this.header = this.dropdown.querySelector(".tab-dropdown-header");
+    this.selectedText = this.dropdown.querySelector(".tab-dropdown-selected");
+    this.options = this.dropdown.querySelectorAll(".tab-dropdown-option");
+
+    this.init();
+  }
+
+  init() {
+    this.header.addEventListener("click", () => {
+      this.dropdown.classList.toggle("active");
+    });
+
+    document.addEventListener("click", (e) => {
+      if (!this.dropdown.contains(e.target)) {
+        this.dropdown.classList.remove("active");
+      }
+    });
+
+    this.options.forEach((option) => {
+      option.addEventListener("click", () => {
+        this.selectedText.textContent = option.textContent;
+
+        this.options.forEach((opt) => opt.classList.remove("active"));
+        option.classList.add("active");
+
+        this.dropdown.classList.remove("active");
+      });
+    });
+  }
+
+  destroy() {
+    this.header.removeEventListener("click", () => {});
+    this.options.forEach((option) => {
+      option.removeEventListener("click", () => {});
+    });
+  }
+}
+
 // App Initialization
 class App {
   constructor() {
@@ -983,6 +1025,7 @@ class App {
         this.modules.video = new Video(videoData);
         this.modules.podcast = new Podcast(podcastData);
         this.modules.serviceContact = new ServiceContact();
+        this.tabDropdown = new TabDropdown();
       });
     } catch (error) {
       console.error("Error initializing modules:", error);
@@ -996,6 +1039,7 @@ class App {
       }
     });
     this.modules = {};
+    this.tabDropdown.destroy();
   }
 }
 
