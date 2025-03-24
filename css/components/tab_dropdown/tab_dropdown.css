@@ -1,0 +1,42 @@
+.tab-dropdown-section {
+  padding: 40px 0;
+  background-color: white;
+}
+
+.tab-dropdown-select {
+  position: relative;
+  width: 100%;
+}
+
+.tab-dropdown-select select {
+  width: 100%;
+  padding: 10px 30px 10px 10px;
+  font-size: var(--font-size-base);
+  background-color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  color: var(--gray);
+  border: 1px solid #EDEDED;
+  font-weight: var(--font-weight-bold);
+  border-radius: 8px;
+}
+
+.tab-dropdown-select select:focus {
+  outline: none;
+}
+
+.tab-dropdown-select-icon {
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-45%);
+  pointer-events: none;
+  transition: transform 0.3s ease;
+}
+
+.tab-dropdown-select select:focus + .tab-dropdown-select-icon {
+  transform: translateY(-60%) rotate(180deg);
+}
